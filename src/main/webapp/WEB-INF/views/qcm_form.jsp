@@ -2,7 +2,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <t:layout title="Question" active="qcm">
-    <h1>${mode == 'edit' ? 'Modifier' : 'Nouvelle'} question</h1>
+    <div class="page-form">
+        <h1>${mode == 'edit' ? 'Modifier' : 'Nouvelle'} question</h1>
     <form method="post" action="${pageContext.request.contextPath}/qcm" class="form">
         <input type="hidden" name="mode" value="${mode}"/>
         <c:if test="${mode=='edit'}">
@@ -25,4 +26,5 @@
             <a class="btn ghost" href="${pageContext.request.contextPath}/qcm">Annuler</a>
         </div>
     </form>
+    </div>
 </t:layout>

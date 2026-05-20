@@ -2,8 +2,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <t:layout title="Passer un examen" active="examen">
-    <h1>Passer un examen</h1>
-    <c:if test="${not empty erreur}"><div class="alert error">${erreur}</div></c:if>
+    <div class="page-form">
+        <h1>Passer un examen</h1>
+        <p class="subtitle">Choisissez un etudiant et l'annee universitaire pour commencer.</p>
+        <c:if test="${not empty erreur}"><div class="alert error">${erreur}</div></c:if>
     <form method="post" action="${pageContext.request.contextPath}/examen/passer" class="form">
         <label>Etudiant
             <select name="num_etudiant" required>
@@ -20,4 +22,5 @@
             <button class="btn primary" type="submit">Commencer</button>
         </div>
     </form>
+    </div>
 </t:layout>

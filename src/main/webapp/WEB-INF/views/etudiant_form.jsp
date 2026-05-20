@@ -2,7 +2,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <t:layout title="Etudiant" active="etudiants">
-    <h1>${mode == 'edit' ? 'Modifier' : 'Nouvel'} etudiant</h1>
+    <div class="page-form">
+        <h1>${mode == 'edit' ? 'Modifier' : 'Nouvel'} etudiant</h1>
     <form method="post" action="${pageContext.request.contextPath}/etudiants" class="form">
         <input type="hidden" name="mode" value="${mode}"/>
         <label>Numero
@@ -24,4 +25,5 @@
             <a class="btn ghost" href="${pageContext.request.contextPath}/etudiants">Annuler</a>
         </div>
     </form>
+    </div>
 </t:layout>
