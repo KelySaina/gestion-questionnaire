@@ -21,7 +21,7 @@
                 <td>${e.numEtudiant}</td>
                 <td>${e.nom}</td>
                 <td>${e.prenoms}</td>
-                <td>${e.niveau}</td>
+                <td><span class="badge ${e.niveau}">${e.niveau}</span></td>
                 <td>${e.adrEmail}</td>
                 <td class="actions">
                     <a href="${pageContext.request.contextPath}/etudiants/edit?id=${e.numEtudiant}">Modifier</a>

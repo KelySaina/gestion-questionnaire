@@ -9,8 +9,8 @@
         <tbody>
         <c:forEach var="entry" items="${counts}">
             <tr>
-                <td>${entry.key}</td>
-                <td>${entry.value}</td>
+                <td><span class="badge ${entry.key}">${entry.key}</span></td>
+                <td><strong>${entry.value}</strong></td>
                 <td><a href="${pageContext.request.contextPath}/etudiants/niveaux?niveau=${entry.key}">Voir la liste</a></td>
             </tr>
         </c:forEach>

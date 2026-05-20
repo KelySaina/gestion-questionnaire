@@ -10,7 +10,7 @@
             <tr>
                 <td>${e.numExam}</td>
                 <td>${e.nomEtudiant} ${e.prenomsEtudiant} <span class="muted">(${e.numEtudiant})</span></td>
-                <td>${e.niveauEtudiant}</td>
+                <td><span class="badge ${e.niveauEtudiant}">${e.niveauEtudiant}</span></td>
                 <td>${e.anneeUniv}</td>
                 <td><strong>${e.note}/10</strong></td>
                 <td>${e.dateExam}</td>
