@@ -1,0 +1,4 @@
+# Sample mailer config. Copy to mail.properties (or set env vars MAIL_API_URL, MAIL_FROM).
+# Envoi via l'API HTTP ks-mailer (nodemailer-api).
+mail.api.url=https://ks-mailer.vercel.app/api/send
+mail.from=no-reply@gestion-questionnaires.local

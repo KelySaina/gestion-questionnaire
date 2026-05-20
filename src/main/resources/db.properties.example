@@ -1,0 +1,4 @@
+# Sample DB config. Copy to db.properties (or set env vars DB_URL, DB_USER, DB_PASSWORD).
+db.url=jdbc:mysql://localhost:3306/gestion_questionnaires?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+db.user=root
+db.password=

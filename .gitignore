@@ -1,0 +1,11 @@
+target/
+*.class
+*.war
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+src/main/resources/db.properties
+src/main/resources/mail.properties
